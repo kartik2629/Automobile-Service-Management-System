@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-color: rgba(255, 255, 255, 0);
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+    body{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url('{% static "images/back.jpg" %}');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      overflow:visible;
+      background-attachment: fixed;
+      background-position: center;
+    } 
+
+  </style>
+
+</head>
+
+<body>
+
+  {% include "vehicle/navbar.html" %}
+  <br><br>
+  <div class="jumbotron" style="margin-bottom:0px; background-color: rgba(240, 248, 255, 0);">
+    <h1 class="display-4" style="color: aliceblue;">Hello, Mechanics</h1>
+    <p class="lead" style="color: aliceblue;">Welcome to Auto-Mobile Service Management</p>
+    <hr class="my-4">
+    <p style="color: aliceblue;">You can access various features after Login.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="mechanicsignup" role="button">Apply For Job</a>
+      <a class="btn btn-primary btn-lg" href="mechaniclogin" role="button">Login</a>
+    </p>
+  </div><br><br>
+  {% include "vehicle/footer.html" %}
+</body>
+
+</html>
